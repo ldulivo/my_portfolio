@@ -1,0 +1,129 @@
+.Academic {
+  background-color: var(--primary);
+  color: var(--text-secondary);
+}
+
+.Academic h2 {
+  margin-bottom: 20px;
+}
+
+.box {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  width: 100%;
+  gap: 20px;
+}
+
+.box > section {
+  flex-grow: 1;
+  width: 100%;
+  max-width: 440px;
+}
+
+.box > section > h2 {
+  font-size: 30px;
+  width: 100%;
+}
+
+.card {
+  padding: 5px 5px 40px 40px;
+  width: 100%;
+  max-width: 440px;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--primary);
+  position: relative;
+}
+
+.card::before {
+  content: '';
+  height: 100%;
+  left: 12px;
+  opacity: .6;
+  position: absolute;
+  top: 0;
+  width: 1px;
+  border-left: 1px solid var(--text-info);
+}
+
+.dot {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  top: 5px;
+  left: 5px;
+  border-radius: 50%;
+  border: 1px solid var(--text-info);
+  background-color: var(--primary);
+}
+
+.card header,
+.card main {
+  margin-bottom: 10px;
+}
+
+.card > main {
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px dashed #ffffff33;
+}
+
+.card > main > h4 > svg {
+  width: 14px;
+  margin-right: 10px;
+}
+
+.card > header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  color: var(--text-primary);
+}
+
+.card > header > svg,
+.card > footer > a > svg {
+  width: 24px;
+}
+
+.card > footer > p {
+  text-align: justify;
+  margin-bottom: 5px;
+}
+
+.card > footer > a {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+  gap: 10px;
+}
+
+.card > footer > a,
+.card > footer > a:visited,
+.card > footer > a:active {
+  color: var(--text-secondary);
+}
+
+.cardImportant {
+  background-color: var(--text-info);
+}
+
+.cardImportant::before {
+  border-left: 1px solid var(--primary);
+}
+
+.cardImportant .dot {
+  border: 1px solid var(--primary);
+  background-color: var(--text-info);
+}
+
+.cardImportant > header {
+  color: #d1d1d1;
+}
+
+@media (max-width: 767px) {
+  .box {
+    flex-wrap: wrap;
+  }
+}

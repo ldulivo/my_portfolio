@@ -1,0 +1,15 @@
+.Content {
+  width: 100%;
+  max-width: 1200px;
+  position: relative;
+}
+
+.MaxHeight {
+  height: 100%;
+}
+
+@media (max-width: 1200px) {
+  .Content {
+    padding: 0 5px;
+  }
+}

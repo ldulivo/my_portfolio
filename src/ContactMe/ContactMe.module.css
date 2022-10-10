@@ -1,0 +1,83 @@
+.ContactMe {
+  background-color: var(--text-secondary);
+}
+
+.box {
+  position: relative;
+  height: 600px;
+}
+
+.box,
+.boxContent > form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.boxContent {
+  position: relative;
+  width: 100%;
+  max-width: 425px;
+  height: 100%;
+  max-height: 550px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.boxContent > form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.boxContent > form label {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding-bottom: 40px;
+}
+
+.boxContent > form span {
+  position: absolute;
+  bottom: 20px;
+  color: var(--text-secondary);
+}
+
+.boxContent > form input,
+.boxContent > form textarea {
+  width: 100%;
+  max-width: 300px;
+  height: 40px;
+  border: none;
+  outline: none;
+  padding: 6px 12px;
+}
+
+.boxContent > form textarea {
+  height: 134px;
+  resize: none;
+}
+
+.boxContent > svg {
+  position: absolute;
+  width: 105%;
+  z-index: -1;
+  top: 48%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media (max-width: 415px) {
+  .boxContent > svg {
+    width: 120%;
+  }
+}
+
+@media (max-width: 374px) {
+  .boxContent > svg {
+    width: 140%;
+  }
+}
