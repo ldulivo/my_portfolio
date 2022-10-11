@@ -1,5 +1,5 @@
 .Academic {
-  background-color: var(--primary);
+  background: var(--primary);
   color: var(--text-secondary);
 }
 
@@ -19,6 +19,7 @@
   flex-grow: 1;
   width: 100%;
   max-width: 440px;
+  padding: 0;
 }
 
 .box > section > h2 {

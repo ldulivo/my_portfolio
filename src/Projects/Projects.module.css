@@ -51,7 +51,7 @@
   height: 546px;
   overflow: hidden;
   position: relative;
-  background-color: var(--primary);
+  background: var(--primary);
   box-shadow:
     inset -3px -4px 4px -4px #333,
     7px 4px 4px -4px #333;

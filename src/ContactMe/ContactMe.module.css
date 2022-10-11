@@ -28,7 +28,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: var(--dark-radial);
+  background: var(--primary);
   padding: 20px;
   color: var(--text-secondary);
 }

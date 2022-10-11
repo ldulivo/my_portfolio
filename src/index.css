@@ -2,9 +2,10 @@
   --text-primary: #878e99;
   --text-secondary: #fff;
   --text-info: #e1893d;
-  --primary: #000000;
-  --dark: #1e222d;
-  --dark-radial :radial-gradient(#3f424a, #1e222d);
+  --primary: linear-gradient(135deg, #342e2a, #425c76);
+  /* --dark: #1e222d; */
+  --dark: linear-gradient(135deg, #43464d, #3f424a);
+  --dark-radial :#151414;
   --check: #2ad508;
 }
 

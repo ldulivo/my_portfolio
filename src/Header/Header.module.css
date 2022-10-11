@@ -1,5 +1,5 @@
 .Header {
-  background-color: var(--primary);
+  background: var(--primary);
   height: 100vh;
   position: relative;
   overflow: hidden;

@@ -1,5 +1,5 @@
 .Skills {
-  background-color: var(--dark);
+  background: var(--dark);
   color: var(--text-secondary);
 }
 
@@ -22,7 +22,7 @@
   max-width: 440px;
   display: flex;
   flex-direction: column;
-  background-color: var(--primary);
+  background: var(--primary);
   box-shadow: inset -3px -4px 4px -4px #333, 7px 4px 4px -4px #333;
 }
 

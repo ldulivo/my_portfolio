@@ -1,5 +1,5 @@
 .AboutMe {
-  background-color: var(--primary);
+  background: var(--primary);
   color: var(--text-secondary);
   padding: 80px 0 120px;
 }
