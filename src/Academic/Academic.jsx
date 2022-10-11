@@ -10,7 +10,7 @@ const Academic = () => {
   const {institute = [], online = []} = store.academic
 
   return (
-    <section className={styles.Academic}>
+    <section className={styles.Academic} id='Academic'>
       <Content>
         <h2>Formación</h2>
       </Content>

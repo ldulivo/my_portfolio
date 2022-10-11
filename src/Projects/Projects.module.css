@@ -48,7 +48,6 @@
 .card {
   width: 280px;
   padding: 20px;
-  /* height: 576px; */
   height: 546px;
   overflow: hidden;
   position: relative;
@@ -56,14 +55,6 @@
   box-shadow:
     inset -3px -4px 4px -4px #333,
     7px 4px 4px -4px #333;
-}
-
-.cardLink {
-  position: absolute;
-  right: 20px;
-  top: 20px;
-  width: 31px;
-  height: 31px;
 }
 
 .cardLink > svg {

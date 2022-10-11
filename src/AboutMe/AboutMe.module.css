@@ -33,7 +33,7 @@
   bottom: 0;
   left: 0;
   z-index: 2;
-  background: radial-gradient(#3f424a, #1e222d);
+  background: var(--dark-radial);
 }
 
 .insideBox::after {

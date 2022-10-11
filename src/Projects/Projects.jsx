@@ -12,7 +12,7 @@ const Projects = () => {
   const { projects } = store
 
   return (
-    <section className={styles.Projects}>
+    <section className={styles.Projects} id='Projects'>
       <Content>
         <h2 className='mb20'>Proyectos</h2>
       </Content>
@@ -20,15 +20,11 @@ const Projects = () => {
         <div className={styles.ProjectsContent}>
           <div className={styles.box} style={{width: `${projects.length * 300}px`}} >
             {projects.map((card, index) =>
-              <div key={index} className={styles.card}>
-                <a
-                  href={card.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={styles.cardLink}
-                >
-                  <LinkSVG />
-                </a>
+              <a key={index} className={styles.card}
+                href={card.link}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <div className={styles.cardContent}>
                   <header>
                     <h3>{card.h3}</h3>
@@ -39,7 +35,7 @@ const Projects = () => {
                   </div>
                   <ProjectsFooter tech={card.tech} />
                 </div>
-              </div>
+              </a>
             )}
           </div>
         </div>

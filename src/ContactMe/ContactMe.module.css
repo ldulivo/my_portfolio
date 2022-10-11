@@ -1,10 +1,15 @@
 .ContactMe {
   background-color: var(--text-secondary);
+  position: relative;
+}
+
+.ContactMe h2 {
+  margin-bottom: 20px;
 }
 
 .box {
   position: relative;
-  height: 600px;
+  /* height: 600px; */
 }
 
 .box,
@@ -19,17 +24,25 @@
   position: relative;
   width: 100%;
   max-width: 425px;
-  height: 100%;
-  max-height: 550px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
+  background: var(--dark-radial);
+  padding: 20px;
+  color: var(--text-secondary);
+}
+
+.boxContent > h3 {
+  padding-bottom: 20px;
+}
+
+.boxContent > p {
+  padding-bottom: 40px;
+  text-align: justify;
 }
 
 .boxContent > form {
-  display: flex;
-  flex-direction: column;
   justify-content: center;
 }
 
@@ -38,6 +51,7 @@
   flex-direction: column;
   position: relative;
   padding-bottom: 40px;
+  width: 100%;
 }
 
 .boxContent > form span {
@@ -49,11 +63,25 @@
 .boxContent > form input,
 .boxContent > form textarea {
   width: 100%;
-  max-width: 300px;
   height: 40px;
   border: none;
   outline: none;
   padding: 6px 12px;
+}
+
+.boxContent > form input {
+  padding: 6px 30px 6px 12px;
+}
+
+.boxContent > form input[type='submit'] {
+  padding: 0;
+}
+
+.boxContent > form label > svg {
+  width: 24px;
+  position: absolute;
+  top: 10px;
+  right: 0;
 }
 
 .boxContent > form textarea {
@@ -61,23 +89,45 @@
   resize: none;
 }
 
-.boxContent > svg {
+.ContactMe > svg {
   position: absolute;
-  width: 105%;
-  z-index: -1;
-  top: 48%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  width: 55%;
+  top: -50%;
+  right: -20%;
 }
 
-@media (max-width: 415px) {
-  .boxContent > svg {
-    width: 120%;
+@media (max-width: 998px) {
+  .ContactMe > svg {
+    top: -40%;
   }
 }
 
-@media (max-width: 374px) {
-  .boxContent > svg {
-    width: 140%;
+@media (max-width: 767px) {
+  .ContactMe > svg {
+    top: -35%;
+  }
+}
+
+@media (max-width: 650px) {
+  .ContactMe > svg {
+    top: -28%;
+  }
+}
+
+@media (max-width: 540px) {
+  .ContactMe > svg {
+    top: -21%;
+  }
+}
+
+@media (max-width: 475px) {
+  .ContactMe > svg {
+    top: -16%;
+  }
+}
+
+@media (max-width: 375px) {
+  .ContactMe > svg {
+    top: -10%;
   }
 }

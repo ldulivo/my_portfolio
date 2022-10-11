@@ -4,6 +4,8 @@
   --text-info: #e1893d;
   --primary: #000000;
   --dark: #1e222d;
+  --dark-radial :radial-gradient(#3f424a, #1e222d);
+  --check: #2ad508;
 }
 
 * {

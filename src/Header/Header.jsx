@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import Content from '../Content'
 import { ArrowNextDown, Github, Linkedin } from '../Svg'
+import { moveToPositionPage } from '../utils/utils'
 import { Blobsvg } from './Blobsvg'
 import styles from  './Header.module.css'
 import { ListOne } from './ListOne'
@@ -55,7 +56,7 @@ const Header = () => {
               )}
             </div>
           </div>
-          <div className={styles.arrowNext}>
+          <div className={styles.arrowNext} onClick={() => moveToPositionPage('Projects')}>
             <ArrowNextDown styleSVG='e1893d'/>
           </div>
         </Content>

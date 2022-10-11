@@ -4,7 +4,7 @@ import styles from './AboutMe.module.css'
 const LeoBox = `${process.env.PUBLIC_URL}/static/LeoBox.png`
 const AboutMe = () => {
   return (
-    <section className={styles.AboutMe}>
+    <section className={styles.AboutMe} id='AboutMe'>
       <Content>
         <h2 className='mb20'>Sobre mi</h2>
       </Content>

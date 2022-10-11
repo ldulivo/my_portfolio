@@ -5,7 +5,7 @@ import { Bootstrap, CloudSVG, CssSVG, GitGitHubSVG, HtmlSVG, JavascriptSVG, Linu
 
 const Skills = () => {
   return (
-    <section className={styles.Skills}>
+    <section className={styles.Skills} id='Skills'>
       <Content>
         <h2>Skills</h2>
       </Content>

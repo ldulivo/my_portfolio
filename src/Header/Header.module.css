@@ -65,7 +65,7 @@
 }
 
 .imgLeo {
-  height: 80vh;
+  height: 85vh;
   position: absolute;
   right: -10px;
   bottom: 0;
@@ -84,16 +84,6 @@
 }
 
 .arrowNext {
-/*   position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: 55px;
-  width: 40px;
-  height: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 305; */
   position: sticky;
   left: 50%;
   transform: translateX(-50%);
@@ -109,6 +99,7 @@
 .arrowNext > svg {
   transition: all 1s linear;
   animation: 3.5s arrowNextAnimation linear infinite;
+  cursor: pointer;
 }
 
 @keyframes arrowNextAnimation {
@@ -149,14 +140,14 @@
 
 @media (max-width: 912px) {
   .imgLeo {
-    height: 75vh;
+    height: 85vh;
     right: -80px;
   }
 }
 
 @media (max-width: 820px) {
   .imgLeo {
-    height: 70vh;
+    height: 80vh;
     right: -70px;
   }
 }
