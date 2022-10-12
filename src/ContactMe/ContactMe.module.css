@@ -92,6 +92,7 @@
 .ContactMe > svg {
   position: absolute;
   width: 55%;
+  max-width: 800px;
   top: -50%;
   right: -20%;
 }
