@@ -31,6 +31,7 @@
   background: var(--primary);
   padding: 20px;
   color: var(--text-secondary);
+  box-shadow: inset -3px -4px 4px -4px #333, 7px 4px 4px -4px #333;
 }
 
 .boxContent > h3 {

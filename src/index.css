@@ -2,10 +2,13 @@
   --text-primary: #878e99;
   --text-secondary: #fff;
   --text-info: #e1893d;
-  --primary: linear-gradient(135deg, #342e2a, #425c76);
-  /* --dark: #1e222d; */
-  --dark: linear-gradient(135deg, #43464d, #3f424a);
-  --dark-radial :#151414;
+  --primary: #000000;
+  --dark: #1e222d;
+  --primary-header: radial-gradient(circle at 70% 70%, #425c76, var(--primary));
+  /* --primary-card: radial-gradient(circle  at 50% 55%, #342e2a 40%, #425c76); */
+  --primary-card: linear-gradient(0deg, #425c76 , var(--primary));
+  --dark-radial: linear-gradient(var(--dark), var(--primary));
+  --dark-navbar: linear-gradient(var(--dark) 20%, var(--primary));
   --check: #2ad508;
 }
 

@@ -95,20 +95,8 @@ export const initialStore = {
         footer: [
           'Ha logrado asimilar las bases de la programación, comprender el ecosistema del desarrollo web, leer e interpretar código propio y ajeno, identificar fallas en un proyecto e implementar las modificaciones necesarias para resolverlo. Como también resolver problemas y errores con autonomía, buscando información en documentación oficial, buscadores y foros afines a la comunidad siempre considerando las buenas prácticas en desarrollo y diseño web.'
         ],
-        link: 'https://www.buenosaires.gob.ar/educacion/codocodo/el-programa',
+        link: 'https://drive.google.com/file/d/1l6L7yLdEPN5JshlvuhrjKT23zfWku0oU/view?usp=sharing',
         important: false
-      },
-      {
-        header: '2012 - 2015',
-        h3: 'Tecnicatura Universitaria en Redes de Datos y Telecomunicaciones',
-        h4: 'Universidad Nacional de Cuyo - Argentina.',
-        footer: [
-          'Instalar, administrar y reparar servidores. Conocer los protocolos de red tales como TCP/IP, HTML, SSH, FTP, entre otros.',
-          'Mantenimiento y administración de Redes de computadoras LAN y WAN.',
-          'Seleccionar, instalar y especificar cableado e instalaciones para redes.'
-        ],
-        link: 'https://www.uncuyo.edu.ar/estudios/carrera/tecnicatura-universitaria-en-redes-de-datos-y-telecomunicaciones',
-        important: true
       },
       {
         header: '2014',

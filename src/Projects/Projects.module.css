@@ -6,14 +6,37 @@
   overflow-x: scroll;
   /* padding-left: 10px; */
   padding-bottom: 20px;
+  position: relative;
+}
+
+.ProjectsContentLeft,
+.ProjectsContentRight {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 48px;
+  height: 48px;
+  background: #00000038;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ProjectsContentLeft {
+  left: 5px;
+}
+
+.ProjectsContentRight {
+  right: 5px;
 }
 
 .ProjectsContent::-webkit-scrollbar {
-  /* display: none; */
-  height: 20px;
+  display: none;
+  /* height: 20px; */
 }
 
-.ProjectsContent::-webkit-scrollbar-thumb {
+/* .ProjectsContent::-webkit-scrollbar-thumb {
   border-radius: 10px;
   background-color: var(--text-secondary);
   background-image: -webkit-linear-gradient(90deg,transparent,rgba(0, 0, 0, 0.4) 50%,transparent,transparent)
@@ -36,7 +59,7 @@
 .ProjectsContent::-webkit-scrollbar-track:hover,
 .ProjectsContent::-webkit-scrollbar-track:active {
   background: #d4d4d4;
-}
+} */
 
 .box {
   width: 100%;
@@ -51,7 +74,7 @@
   height: 546px;
   overflow: hidden;
   position: relative;
-  background: var(--primary);
+  background: var(--primary-card);
   box-shadow:
     inset -3px -4px 4px -4px #333,
     7px 4px 4px -4px #333;

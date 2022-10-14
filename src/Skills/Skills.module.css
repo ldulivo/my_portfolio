@@ -23,7 +23,7 @@
   display: flex;
   flex-direction: column;
   background: var(--primary);
-  box-shadow: inset -3px -4px 4px -4px #333, 7px 4px 4px -4px #333;
+  box-shadow: inset -3px -4px 4px -4px #ffffff, 7px 4px 4px -4px #b1adc4;
 }
 
 .card > h3 {

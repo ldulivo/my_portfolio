@@ -1,15 +1,42 @@
-import { useContext } from 'react'
+import { useContext, useRef } from 'react'
 import { StoreContext } from '../store/StoreProvider'
 
 import Content from '../Content'
 
 import styles from './Projects.module.css'
 import { ProjectsFooter } from './ProjectsFooter'
-import { LinkSVG } from '../Svg'
+import { ArrowLeftProject, ArrowRightProject, LinkSVG } from '../Svg'
+import { moveToCardProject } from '../utils/utils'
 
 const Projects = () => {
   const [store, dispatch] = useContext(StoreContext)
   const { projects } = store
+  const contentProjects = useRef()
+  let scrollContent = 0
+
+  /* 
+  a.parentNode.parentNode.childNodes[0].clientWidth
+  a.parentNode.clientWidth
+   */
+  const nextCard = () => {
+    scrollContent = moveToCardProject(
+      contentProjects.current.id,
+      projects.length,
+      'right'
+    )
+    console.log('scrollContent', scrollContent)
+    document.getElementById(contentProjects.current.id).scrollLeft = scrollContent
+  }
+
+  const previousCard = () => {
+    scrollContent = moveToCardProject(
+      contentProjects.current.id,
+      projects.length,
+      'left'
+    )
+    console.log('scrollContent', scrollContent)
+    document.getElementById(contentProjects.current.id).scrollLeft = scrollContent
+  }
 
   return (
     <section className={styles.Projects} id='Projects'>
@@ -17,7 +44,10 @@ const Projects = () => {
         <h2 className='mb20'>Proyectos</h2>
       </Content>
       <Content>
-        <div className={styles.ProjectsContent}>
+        <div 
+        ref={contentProjects}
+        id='contentProjectsId'
+        className={styles.ProjectsContent}>
           <div className={styles.box} style={{width: `${projects.length * 300}px`}} >
             {projects.map((card, index) =>
               <a key={index} className={styles.card}
@@ -38,6 +68,12 @@ const Projects = () => {
               </a>
             )}
           </div>
+        </div>
+        <div className={styles.ProjectsContentLeft} onClick={() => previousCard()}>
+          <ArrowLeftProject styleSVG='ffffffc4'/>
+        </div>
+        <div className={styles.ProjectsContentRight} onClick={() => nextCard()}>
+          <ArrowRightProject styleSVG='ffffffc4'/>
         </div>
       </Content>
     </section>

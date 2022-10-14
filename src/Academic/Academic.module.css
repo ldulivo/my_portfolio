@@ -48,6 +48,15 @@
   border-left: 1px solid var(--text-info);
 }
 
+.uncuyo {
+  max-width: 100%;
+  padding: 20px;
+}
+
+.uncuyo::before {
+  content: none;
+}
+
 .dot {
   position: absolute;
   width: 15px;

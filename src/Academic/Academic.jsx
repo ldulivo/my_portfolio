@@ -15,9 +15,34 @@ const Academic = () => {
         <h2>Formación</h2>
       </Content>
       <Content>
+        <div className={`${styles.card} ${styles.uncuyo}`}>
+          <header>
+            <CalendarSVG styleSVG='ffffff' />
+            <p>2012 - 2015</p>
+          </header>
+          <main>
+            <h3>Tecnicatura Universitaria en Redes de Datos y Telecomunicaciones</h3>
+            <h4>Universidad Nacional de Cuyo - Argentina.</h4>
+          </main>
+          <footer>
+            <p>Instalar, administrar y reparar servidores. Conocer los protocolos de red tales como TCP/IP, HTML, SSH, FTP, entre otros.</p>
+            <p>Mantenimiento y administración de Redes de computadoras LAN y WAN.</p>
+            <p>Seleccionar, instalar y especificar cableado e instalaciones para redes.</p>
+            <a
+              href='https://www.uncuyo.edu.ar/estudios/carrera/tecnicatura-universitaria-en-redes-de-datos-y-telecomunicaciones'
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <p>sitio web</p>
+              <ArrowRight styleSVG='e1893d' />
+            </a>
+          </footer>
+        </div>
+      </Content>
+      <Content>
         <div className={styles.box}>
           <section>
-            <h2>Instituto</h2>
+            <h2>Cursos de Instituto</h2>
             {institute.map((academic, index) =>
               <div key={index} className={`${styles.card} ${academic.important ? styles.cardImportant : ''}`}>
                 <span className={styles.dot}></span>
@@ -47,7 +72,7 @@ const Academic = () => {
           </section>
 
           <section>
-            <h2>Online</h2>
+            <h2>Otros Cursos Online</h2>
             {online.map((academic, index) =>
               <div key={index} className={`${styles.card} ${academic.important ? styles.cardImportant : ''}`}>
                 <span className={styles.dot}></span>
