@@ -22,10 +22,9 @@ const AboutMe = () => {
                 <h4>Desarrollador WEB <span>React.js</span> Junior.</h4>
               </header>
               <main>
-                <p>Soy informático, me divierte programar, además tengo experiencia como freelancer en redes y sistemas.</p>
-                <p>Llevo más de 2 años practicando React, Javascript, HTML y CSS.</p>
-                <p>En 2015 terminé mi formación Universitaria y recientemente completé un curso de DESARROLLO WEB-Js/NODE Js FULL STACK del Ministerio de Educación del Gobierno de la Ciudad de Buenos Aires (Argentina).</p>
-                <p>Gracias a mi trayectoria laboral he adquirido buena capacidad para analizar y resolver problemas. Me gusta el trabajo en equipo, ya que puedo aprender de los demás y compartir mis conocimientos.</p>
+                <p>Soy desarrollador web Junior, busco oportunidad para poner en práctica mis conocimientos en React JS, HTML, CSS y Javascript, entre otras tecnologías.</p>
+                <p>Cuento con título de estudios terciarios en redes y telecomunicaciones de una Universidad Argentina. Me gusta el trabajo en equipo y tengo experiencia en mantenimiento de ordenadores y servidores linux.</p>
+                <p>Mi objetivo es poder trabajar en desarrollo web.</p>
               </main>
               <footer>
                 <a
@@ -38,7 +37,12 @@ const AboutMe = () => {
             </div>
           </div>
           <div className={styles.boxFooter}>
-                <a href="#" className="btn">Mi CV</a>
+                <a
+                  href={`${process.env.PUBLIC_URL}/static/CV_DUlivo_Leonardo_Ariel.pdf`}
+                  className="btn"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >Mi CV</a>
           </div>
         </div>
       </Content>

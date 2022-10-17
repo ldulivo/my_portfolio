@@ -5,19 +5,15 @@ import Content from '../Content'
 
 import styles from './Projects.module.css'
 import { ProjectsFooter } from './ProjectsFooter'
-import { ArrowLeftProject, ArrowRightProject, LinkSVG } from '../Svg'
+import { ArrowLeftProject, ArrowRightProject } from '../Svg'
 import { moveToCardProject } from '../utils/utils'
 
 const Projects = () => {
-  const [store, dispatch] = useContext(StoreContext)
+  const [store] = useContext(StoreContext)
   const { projects } = store
   const contentProjects = useRef()
   let scrollContent = 0
-
-  /* 
-  a.parentNode.parentNode.childNodes[0].clientWidth
-  a.parentNode.clientWidth
-   */
+  
   const nextCard = () => {
     scrollContent = moveToCardProject(
       contentProjects.current.id,
